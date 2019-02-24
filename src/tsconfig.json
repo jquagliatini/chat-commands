@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "removeComments": true,
+        "target": "es2015",
+        "sourceMap": true,
+        "outDir": "../bin"
+    },
+    "include": [
+        "./**/*.ts"
+    ],
+    "exclude": [
+        "./**/*.spec.ts"
+    ]
+}

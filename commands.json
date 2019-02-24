@@ -1,0 +1,57 @@
+[
+    {
+        "cmd": "help",
+        "description": "Show this help message for every command",
+        "aliases": [
+            "h"
+        ]
+    },
+    {
+        "cmd": "admins",
+        "description": "list all the admins in the current channel"
+    },
+    {
+        "cmd": "me",
+        "usage": "/me lorem ipsum",
+        "description": "display a phrase as <USERNAME> <PHRASE> to everyone"
+    },
+    {
+        "cmd": "leave",
+        "aliases": [
+            "l", "lv"
+        ],
+        "description": "change your connection status as 'away'"
+    },
+    {
+        "cmd": "promote",
+        "args": [{
+            "name": "user",
+            "description": "the username to promote"
+        }],
+        "usage": "/promote <USER>",
+        "privileged": true,
+        "description": "promotes a user to admin level"
+    },
+    {
+        "cmd": "dismiss",
+        "args": [{
+            "name": "user",
+            "description": "the username to dismiss"
+        }],
+        "privileged": true,
+        "description": "change the admin user to a simple user"
+    },
+    {
+        "cmd": "mute",
+        "usage": "/mute <USER>",
+        "args": [{
+            "name": "user",
+            "description": "a username"
+        }],
+        "aliases": [
+            "kick", "m"
+        ],
+        "privileged": true,
+        "description": "mute a user, really similar to shadow ban"
+    }
+]
